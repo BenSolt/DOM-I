@@ -40,3 +40,30 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+  let logocircle = document.getElementById("cta-img");
+  logocircle.setAttribute('src', siteContent["cta"]["img-src"])
+
+  //  let midImage = document.getElementsByClassName("middle-img");
+  //  midImage.setAttribute('src', siteContent["middle-img"]["img-src"])
+
+
+  // Dom is Awesome
+  const title = document.querySelector('h1');
+  title.textContent = "Dom is Awesome";
+
+
+  // Button Get Started
+  const btntext = document.querySelector('button');
+  btntext.textContent = "Get Started";
+
+  const navbar = document.querySelector('nav');
+  navbar.textContent = "services";
+
+
+  // const navbar = document.querySelectorAll('.container');
+  // navbar.forEach(element => {
+  //   element.style.color = '#e62739';
+  // })
