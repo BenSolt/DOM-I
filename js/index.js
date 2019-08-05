@@ -58,19 +58,22 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
   // Dom is Awesome
   const title = document.querySelector('.cta-text h1');
-  title.textContent = "Dom is Awesome";
+  title.textContent = "DOM is Awesome";
 
+ // \n
 
+  //title.setAttribute('style', 'white-space: pre;');
 
-
+  
+ 
   // Button Get Started
   const btntext = document.querySelector('button');
   btntext.textContent = "Get Started";
 
-  // Navig Bar Text 1 services
- 
- 
 
+
+  // Navig Bar 
+ 
   const allAnchor = document.querySelectorAll('nav a');
   allAnchor[0].textContent = "services";
   allAnchor[1].textContent = "Product";
@@ -78,7 +81,36 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
   allAnchor[3].textContent = "Features";
   allAnchor[4].textContent = "About";
   allAnchor[5].textContent = "Contact";
+
  
+
+
+
+  // APPEND - End
+    var endword = document.createElement("a");
+    endword.textContent = "Last"
+    var navbar = document.querySelector('nav');
+    navbar.appendChild(endword);
+    
+
+
+    // PREPEND - first
+    var firstword = document.createElement("a");
+    firstword.textContent = "First"
+    navbar.prepend(firstword);
+
+
+
+  // Change Color to green
+const secondaryHeaders = document.querySelectorAll('nav a');
+secondaryHeaders.forEach(element => {
+  element.style.color = 'green';
+})
+
+
+
+
+
 
 
   // Main Content H4
@@ -113,6 +145,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
   contactInfo[0].textContent = "123 Way 456 Street Somewhere, USA";
   contactInfo[1].textContent = "1 (888) 888-8888";
   contactInfo[2].textContent = "sales@greatidea.io";
+
+  
 
 
   // Footer
