@@ -40,3 +40,118 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+// Image circle
+  let logocircle = document.getElementById("cta-img");
+  logocircle.setAttribute('src', siteContent["cta"]["img-src"])
+
+
+// Image Middle
+   let midImage = document.querySelector(".middle-img");
+   midImage.setAttribute('src', "img/mid-page-accent.jpg");
+
+
+  
+
+
+  // Dom is Awesome
+  const title = document.querySelector('.cta-text h1');
+  title.textContent = "DOM is Awesome";
+
+ // \n
+
+  //title.setAttribute('style', 'white-space: pre;');
+
+  
+ 
+  // Button Get Started
+  const btntext = document.querySelector('button');
+  btntext.textContent = "Get Started";
+
+
+
+  // Navig Bar 
+ 
+  const allAnchor = document.querySelectorAll('nav a');
+  allAnchor[0].textContent = "services";
+  allAnchor[1].textContent = "Product";
+  allAnchor[2].textContent = "Vision";
+  allAnchor[3].textContent = "Features";
+  allAnchor[4].textContent = "About";
+  allAnchor[5].textContent = "Contact";
+
+ 
+
+
+
+  // APPEND - End
+    var endword = document.createElement("a");
+    endword.textContent = "Last"
+    var navbar = document.querySelector('nav');
+    navbar.appendChild(endword);
+    
+
+
+    // PREPEND - first
+    var firstword = document.createElement("a");
+    firstword.textContent = "First"
+    navbar.prepend(firstword);
+
+
+
+  // Change Color to green
+const secondaryHeaders = document.querySelectorAll('nav a');
+secondaryHeaders.forEach(element => {
+  element.style.color = 'green';
+})
+
+
+
+
+
+
+
+  // Main Content H4
+  const allh4 = document.querySelectorAll('.main-content h4');
+  allh4[0].textContent =  "Features";
+  allh4[1].textContent = "About";
+  allh4[2].textContent =  "Services";
+  allh4[3].textContent = "Product";
+  allh4[4].textContent = "Vision";
+
+
+
+// Main Content p
+  const alltext = document.querySelectorAll('.main-content p');
+  alltext[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+  alltext[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+  alltext[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+  alltext[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+  alltext[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+
+
+
+
+  // CONTACT
+  const contactTitle = document.querySelector('.contact h4');
+  contactTitle.textContent = "Contact";
+
+
+  // Contact Info
+  const contactInfo = document.querySelectorAll('.contact p');
+  contactInfo[0].textContent = "123 Way 456 Street Somewhere, USA";
+  contactInfo[1].textContent = "1 (888) 888-8888";
+  contactInfo[2].textContent = "sales@greatidea.io";
+
+  
+
+
+  // Footer
+  const footer = document.querySelector('footer');
+  footer.textContent = "Copyright Great Idea! 2018";
+
+ 
+  
