@@ -1,7 +1,7 @@
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
-    "nav-item-2": "Product",
+    "nav-item-2": "asdfa",
     "nav-item-3": "Vision",
     "nav-item-4": "Features",
     "nav-item-5": "About",
@@ -59,6 +59,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
   // Dom is Awesome
   const title = document.querySelector('.cta-text h1');
   title.textContent = "DOM is Awesome";
+  title.style.width = "175px";
+  title.style.marginLeft= "-95px";
 
  // \n
 
@@ -75,12 +77,13 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
   // Navig Bar 
  
   const allAnchor = document.querySelectorAll('nav a');
-  allAnchor[0].textContent = "services";
-  allAnchor[1].textContent = "Product";
-  allAnchor[2].textContent = "Vision";
-  allAnchor[3].textContent = "Features";
-  allAnchor[4].textContent = "About";
-  allAnchor[5].textContent = "Contact";
+  "nav-item-1"
+  allAnchor[0].textContent = siteContent["nav"]["nav-item-1"];
+  allAnchor[1].textContent = siteContent["nav"]["nav-item-2"];
+  allAnchor[2].textContent = siteContent["nav"]["nav-item-3"];
+  allAnchor[3].textContent = siteContent["nav"]["nav-item-4"];
+  allAnchor[4].textContent = siteContent["nav"]["nav-item-5"];
+  allAnchor[5].textContent = siteContent["nav"]["nav-item-6"];
 
  
 
@@ -155,3 +158,17 @@ secondaryHeaders.forEach(element => {
 
  
   
+
+
+  // STRETCH
+  
+
+const eventClick = document.querySelector('button');
+
+  eventClick.addEventListener('click', (e)=> {
+    console.log('clicked')
+    //event.target.style.background = 'purple';})
+   //document.getElementsByClassName('container')
+   document.body.style.background = 'blue';})
+   
+ 
